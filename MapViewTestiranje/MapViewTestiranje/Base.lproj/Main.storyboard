@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W08-Jf-QKt">
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3Ap-1w-yNm"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVp-2J-q5I">
+                                <items>
+                                    <barButtonItem style="plain" id="NBa-FO-DAF">
+                                        <view key="customView" contentMode="scaleToFill" id="IEr-2I-6fQ">
+                                            <rect key="frame" x="16" y="6" width="158" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Locate me:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVV-S6-z7v">
+                                                    <frame key="frameInset" minX="8" minY="6" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uZT-gX-jfV">
+                                                    <frame key="frameInset" minX="109" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KCS-6J-No7"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="uZT-gX-jfV" secondAttribute="trailing" id="GcA-Nt-26F"/>
+                                                <constraint firstItem="nVV-S6-z7v" firstAttribute="centerY" secondItem="IEr-2I-6fQ" secondAttribute="centerY" id="V4t-sU-rgS"/>
+                                                <constraint firstItem="uZT-gX-jfV" firstAttribute="centerY" secondItem="IEr-2I-6fQ" secondAttribute="centerY" id="bRM-f7-7JY"/>
+                                                <constraint firstItem="nVV-S6-z7v" firstAttribute="leading" secondItem="IEr-2I-6fQ" secondAttribute="leading" id="ent-y8-SvA"/>
+                                            </constraints>
+                                        </view>
+                                    </barButtonItem>
+                                    <barButtonItem title="MATF" id="wkS-c0-0aO">
+                                        <connections>
+                                            <action selector="luciTapped:" destination="BYZ-38-t0r" id="JCl-gt-OMT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Jagic" id="eBI-gc-Vaz">
+                                        <connections>
+                                            <action selector="wiclTapped:" destination="BYZ-38-t0r" id="JE2-iJ-y5g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Microsoft" id="IGX-Lx-Fek">
+                                        <connections>
+                                            <action selector="gradientTapped:" destination="BYZ-38-t0r" id="it6-Jy-4pa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xVp-2J-q5I" secondAttribute="trailing" id="125-xY-zus"/>
+                            <constraint firstItem="W08-Jf-QKt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="CSr-2F-a91"/>
+                            <constraint firstItem="W08-Jf-QKt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ine-17-x2P"/>
+                            <constraint firstItem="xVp-2J-q5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qc3-pN-2XB"/>
+                            <constraint firstItem="xVp-2J-q5I" firstAttribute="top" secondItem="W08-Jf-QKt" secondAttribute="bottom" id="j2J-S3-HdN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W08-Jf-QKt" secondAttribute="trailing" constant="-20" id="rje-2A-WLs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xVp-2J-q5I" secondAttribute="bottom" id="yfT-n4-Xuk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="W08-Jf-QKt" id="Rye-2d-cva"/>
+                        <outlet property="switchField" destination="uZT-gX-jfV" id="Fmb-fJ-R3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+</document>
