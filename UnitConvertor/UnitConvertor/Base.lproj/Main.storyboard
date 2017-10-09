@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ul8-kp-Quu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="Vlc-5y-6ct"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-dl-dAz">
+                                <segments>
+                                    <segment title="octal"/>
+                                    <segment title="decimal"/>
+                                    <segment title="hexadecimal"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olW-ag-o2P">
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1P-xx-EuF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Update for the answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ev-1o-mz5">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in binary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHp-rP-Rdh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ul8-kp-Quu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9MO-fA-0tt"/>
+                            <constraint firstItem="Agt-dl-dAz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FSg-UR-xaB"/>
+                            <constraint firstItem="3Ev-1o-mz5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S0a-1C-zVT"/>
+                            <constraint firstItem="Agt-dl-dAz" firstAttribute="top" secondItem="LHp-rP-Rdh" secondAttribute="bottom" constant="101" id="bvh-ft-bFU"/>
+                            <constraint firstItem="3Ev-1o-mz5" firstAttribute="top" secondItem="olW-ag-o2P" secondAttribute="bottom" constant="8" id="ePd-bx-Rgs"/>
+                            <constraint firstItem="olW-ag-o2P" firstAttribute="top" secondItem="Agt-dl-dAz" secondAttribute="bottom" constant="8" id="laf-B0-fJe"/>
+                            <constraint firstItem="3Ev-1o-mz5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p1G-id-Dh8"/>
+                            <constraint firstItem="ul8-kp-Quu" firstAttribute="bottom" secondItem="LHp-rP-Rdh" secondAttribute="bottom" id="qDP-zW-KbB"/>
+                            <constraint firstItem="olW-ag-o2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4Z-WX-hjf"/>
+                            <constraint firstItem="LHp-rP-Rdh" firstAttribute="leading" secondItem="ul8-kp-Quu" secondAttribute="trailing" constant="8" symbolic="YES" id="uxq-tx-esp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="ul8-kp-Quu" id="t5l-p0-Wpi"/>
+                        <outlet property="outputField" destination="3Ev-1o-mz5" id="5jn-hD-NR9"/>
+                        <outlet property="segmentController" destination="Agt-dl-dAz" id="pZX-Aq-OiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="-13.043478260869566"/>
+        </scene>
+    </scenes>
+</document>
