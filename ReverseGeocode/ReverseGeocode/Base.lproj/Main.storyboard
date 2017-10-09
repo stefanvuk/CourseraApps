@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4V4-cq-xp9">
+                                <frame key="frameInset" width="375" height="626"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0la-3b-vUv"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-kd-81f">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="map-pin-red-hi" translatesAutoresizingMaskIntoConstraints="NO" id="rHH-h8-BlD">
+                                <frame key="frameInset" minX="161" minY="286" width="53" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="PKC-Ph-Lxv"/>
+                                    <constraint firstAttribute="height" constant="31" id="eFn-t9-ftt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MfT-kd-81f" firstAttribute="top" secondItem="4V4-cq-xp9" secondAttribute="bottom" constant="8" symbolic="YES" id="B6q-l9-qK6"/>
+                            <constraint firstItem="rHH-h8-BlD" firstAttribute="centerY" secondItem="4V4-cq-xp9" secondAttribute="centerY" id="NUb-n7-3yY"/>
+                            <constraint firstItem="4V4-cq-xp9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pde-4M-B2X"/>
+                            <constraint firstAttribute="trailing" secondItem="4V4-cq-xp9" secondAttribute="trailing" constant="-20" id="RLv-hs-abh"/>
+                            <constraint firstAttribute="trailing" secondItem="MfT-kd-81f" secondAttribute="trailing" id="U9P-0Q-MZ5"/>
+                            <constraint firstItem="4V4-cq-xp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="X1w-g0-dkR"/>
+                            <constraint firstItem="MfT-kd-81f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aoG-r2-WQv"/>
+                            <constraint firstItem="rHH-h8-BlD" firstAttribute="centerX" secondItem="4V4-cq-xp9" secondAttribute="centerX" id="mVF-CA-HqU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MfT-kd-81f" secondAttribute="bottom" constant="8" symbolic="YES" id="w40-Se-nEw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="geocodeLabel" destination="MfT-kd-81f" id="gaz-Pn-OZB"/>
+                        <outlet property="mapView" destination="4V4-cq-xp9" id="oFq-jT-yBx"/>
+                        <outlet property="pinIcon" destination="rHH-h8-BlD" id="Dfv-qc-Tup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map-pin-red-hi" width="372" height="594"/>
+    </resources>
+</document>
