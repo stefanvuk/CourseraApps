@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo on 5-7-16 at 13.21.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="do3-gh-YsV">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="do3-gh-YsV" secondAttribute="height" multiplier="1:1" id="iLP-gN-Dd7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-7P-5Ui">
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xg-XA-TVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuU-bT-XLe">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cuU-bT-XLe" secondAttribute="height" multiplier="53:30" id="Z0y-3M-9AZ"/>
+                                </constraints>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuU-0U-dVA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jm-cX-TIf">
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyY-bb-iBi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="do3-gh-YsV" secondAttribute="trailing" id="2Mf-55-fDw"/>
+                            <constraint firstItem="do3-gh-YsV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2QJ-DG-OrJ"/>
+                            <constraint firstItem="4Jm-cX-TIf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DQH-Es-ceH"/>
+                            <constraint firstItem="do3-gh-YsV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KmV-GM-NnH"/>
+                            <constraint firstItem="do3-gh-YsV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zhh-AK-iUJ"/>
+                            <constraint firstItem="4Jm-cX-TIf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g1R-a9-ffE"/>
+                            <constraint firstItem="qI0-7P-5Ui" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lFv-cm-KJr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cuU-bT-XLe" secondAttribute="bottom" id="o44-g2-yEb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cuU-bT-XLe" secondAttribute="trailing" constant="145" id="qMd-lC-cc2"/>
+                            <constraint firstItem="cuU-bT-XLe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="145" id="uTT-Pa-YXz"/>
+                            <constraint firstItem="qI0-7P-5Ui" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="ytH-Ck-BR9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="do3-gh-YsV" id="L6k-Zq-rDJ"/>
+                        <outlet property="loginButton" destination="qI0-7P-5Ui" id="PKx-Ey-yrb"/>
+                        <outlet property="logoutButton" destination="4Jm-cX-TIf" id="Gnr-bz-JHx"/>
+                        <outlet property="refreshButton" destination="cuU-bT-XLe" id="9k9-nu-nb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo on 5-7-16 at 13.21.jpg" width="1080" height="720"/>
+    </resources>
+</document>
