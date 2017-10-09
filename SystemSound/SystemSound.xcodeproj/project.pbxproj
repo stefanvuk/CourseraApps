@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0434746C1E5F884C00438C90 /* sound3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 043474691E5F884C00438C90 /* sound3.wav */; };
+		0434746D1E5F884C00438C90 /* sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0434746A1E5F884C00438C90 /* sound4.mp3 */; };
+		043474701E5F8E7900438C90 /* sound5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0434746F1E5F8E7900438C90 /* sound5.wav */; };
+		043E39911E5B88D100B9C840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E39901E5B88D100B9C840 /* main.m */; };
+		043E39941E5B88D100B9C840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E39931E5B88D100B9C840 /* AppDelegate.m */; };
+		043E39971E5B88D100B9C840 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E39961E5B88D100B9C840 /* ViewController.m */; };
+		043E399A1E5B88D100B9C840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E39981E5B88D100B9C840 /* Main.storyboard */; };
+		043E399C1E5B88D100B9C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043E399B1E5B88D100B9C840 /* Assets.xcassets */; };
+		043E399F1E5B88D100B9C840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E399D1E5B88D100B9C840 /* LaunchScreen.storyboard */; };
+		043E39A81E5B8A9900B9C840 /* Calvin Harris &amp; David Guetta - Glows.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043E39A61E5B8A9900B9C840 /* Calvin Harris &amp; David Guetta - Glows.mp3 */; };
+		043E39A91E5B8A9900B9C840 /* Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043E39A71E5B8A9900B9C840 /* Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3 */; };
+		043E39AE1E5B911600B9C840 /* soundA.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 043E39AC1E5B911600B9C840 /* soundA.aiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043474691E5F884C00438C90 /* sound3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound3.wav; sourceTree = "<group>"; };
+		0434746A1E5F884C00438C90 /* sound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound4.mp3; sourceTree = "<group>"; };
+		0434746F1E5F8E7900438C90 /* sound5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound5.wav; sourceTree = "<group>"; };
+		043E398C1E5B88D100B9C840 /* SystemSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043E39901E5B88D100B9C840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043E39921E5B88D100B9C840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		043E39931E5B88D100B9C840 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		043E39951E5B88D100B9C840 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		043E39961E5B88D100B9C840 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		043E39991E5B88D100B9C840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043E399B1E5B88D100B9C840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043E399E1E5B88D100B9C840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043E39A01E5B88D100B9C840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043E39A61E5B8A9900B9C840 /* Calvin Harris &amp; David Guetta - Glows.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Calvin Harris &amp; David Guetta - Glows.mp3"; path = "../Calvin Harris &amp; David Guetta - Glows.mp3"; sourceTree = "<group>"; };
+		043E39A71E5B8A9900B9C840 /* Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3"; path = "../Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3"; sourceTree = "<group>"; };
+		043E39AC1E5B911600B9C840 /* soundA.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = soundA.aiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043E39891E5B88D000B9C840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043E39831E5B88D000B9C840 = {
+			isa = PBXGroup;
+			children = (
+				043E398E1E5B88D100B9C840 /* SystemSound */,
+				043E398D1E5B88D100B9C840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		043E398D1E5B88D100B9C840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043E398C1E5B88D100B9C840 /* SystemSound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043E398E1E5B88D100B9C840 /* SystemSound */ = {
+			isa = PBXGroup;
+			children = (
+				043E39921E5B88D100B9C840 /* AppDelegate.h */,
+				043E39931E5B88D100B9C840 /* AppDelegate.m */,
+				043E39951E5B88D100B9C840 /* ViewController.h */,
+				043E39961E5B88D100B9C840 /* ViewController.m */,
+				043E39981E5B88D100B9C840 /* Main.storyboard */,
+				043E399B1E5B88D100B9C840 /* Assets.xcassets */,
+				043E399D1E5B88D100B9C840 /* LaunchScreen.storyboard */,
+				043E39A01E5B88D100B9C840 /* Info.plist */,
+				043E39AC1E5B911600B9C840 /* soundA.aiff */,
+				043E39A61E5B8A9900B9C840 /* Calvin Harris &amp; David Guetta - Glows.mp3 */,
+				043E39A71E5B8A9900B9C840 /* Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3 */,
+				043474691E5F884C00438C90 /* sound3.wav */,
+				0434746A1E5F884C00438C90 /* sound4.mp3 */,
+				0434746F1E5F8E7900438C90 /* sound5.wav */,
+				043E398F1E5B88D100B9C840 /* Supporting Files */,
+			);
+			path = SystemSound;
+			sourceTree = "<group>";
+		};
+		043E398F1E5B88D100B9C840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				043E39901E5B88D100B9C840 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043E398B1E5B88D000B9C840 /* SystemSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043E39A31E5B88D100B9C840 /* Build configuration list for PBXNativeTarget "SystemSound" */;
+			buildPhases = (
+				043E39881E5B88D000B9C840 /* Sources */,
+				043E39891E5B88D000B9C840 /* Frameworks */,
+				043E398A1E5B88D000B9C840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SystemSound;
+			productName = SystemSound;
+			productReference = 043E398C1E5B88D100B9C840 /* SystemSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043E39841E5B88D000B9C840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Stefan;
+				TargetAttributes = {
+					043E398B1E5B88D000B9C840 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 043E39871E5B88D000B9C840 /* Build configuration list for PBXProject "SystemSound" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043E39831E5B88D000B9C840;
+			productRefGroup = 043E398D1E5B88D100B9C840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043E398B1E5B88D000B9C840 /* SystemSound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043E398A1E5B88D000B9C840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043474701E5F8E7900438C90 /* sound5.wav in Resources */,
+				043E399F1E5B88D100B9C840 /* LaunchScreen.storyboard in Resources */,
+				043E399C1E5B88D100B9C840 /* Assets.xcassets in Resources */,
+				0434746C1E5F884C00438C90 /* sound3.wav in Resources */,
+				043E39A81E5B8A9900B9C840 /* Calvin Harris &amp; David Guetta - Glows.mp3 in Resources */,
+				043E399A1E5B88D100B9C840 /* Main.storyboard in Resources */,
+				043E39A91E5B8A9900B9C840 /* Skrillex &amp; Rick Ross - Purple Lamborghini [Official Video].mp3 in Resources */,
+				0434746D1E5F884C00438C90 /* sound4.mp3 in Resources */,
+				043E39AE1E5B911600B9C840 /* soundA.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043E39881E5B88D000B9C840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043E39971E5B88D100B9C840 /* ViewController.m in Sources */,
+				043E39941E5B88D100B9C840 /* AppDelegate.m in Sources */,
+				043E39911E5B88D100B9C840 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		043E39981E5B88D100B9C840 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043E39991E5B88D100B9C840 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043E399D1E5B88D100B9C840 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043E399E1E5B88D100B9C840 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043E39A11E5B88D100B9C840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043E39A21E5B88D100B9C840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043E39A41E5B88D100B9C840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SystemSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Stefan.SystemSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		043E39A51E5B88D100B9C840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SystemSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Stefan.SystemSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043E39871E5B88D000B9C840 /* Build configuration list for PBXProject "SystemSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E39A11E5B88D100B9C840 /* Debug */,
+				043E39A21E5B88D100B9C840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043E39A31E5B88D100B9C840 /* Build configuration list for PBXNativeTarget "SystemSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E39A41E5B88D100B9C840 /* Debug */,
+				043E39A51E5B88D100B9C840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043E39841E5B88D000B9C840 /* Project object */;
+}
